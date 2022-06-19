@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products | CubeStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125" alt="фото">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Домой</a></li>
+                    <li><a href="">Товар</a></li>
+                    <li><a href="">Другое</a></li>
+                    <li><a href="">Связь</a></li>
+                    <li><a href="">Аккаунт</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30" height="30" alt="cart_icon">
+            <img src="images/menu.png" alt="фото" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    
+
+<!-- cart items details  -->
+
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Товар</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg" alt="картинка покупаемого товара">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Убрать</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg" alt="картинка покупаемого товара">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: $75.00</small>
+                            <br>
+                            <a href="">Убрать</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$75.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-3.jpg" alt="картинка покупаемого товара">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Убрать</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Сумма</td>
+                    <td>$175.00</td>
+                </tr>
+                <tr>
+                    <td>Налог</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>Итог</td>
+                    <td>$275.00</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+   
+<!-- footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Скачать приложение для Android и ios устройств</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="play-store">
+                        <img src="images/app-store.png" alt="play-store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="logo-white">
+                    <p>Скачать приложение для Android и ios устройств</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Купоны</li>
+                        <li>Сообщения блога</li>
+                        <li>Политика возврата</li>
+                        <li>Присоединится к партнерке</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Подписывайтесь на нас</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>inst</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Mutaev</p>
+        </div>
+    </footer>
+
+
+    <!-- jsfortooglemenu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else    
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+
+    </script>
+
+
+</body>
+</html>
